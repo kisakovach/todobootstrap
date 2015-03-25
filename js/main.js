@@ -7,19 +7,19 @@ var app = {
 
    bindEvents: function(){
 
-    document.addEventListner("deviceredy",this.onDeviceRedy, false);
+    document.addEventListner("deviceready",this.onDeviceRedy, false);
 
    },
 	
    onDeviceRedy: function(){
 
-	this.recivedEvents("deviceredy");
+	this.recivedEvents("deviceready");
 
    },
 
   recivedEvents: function(id){
 
-   $("#main").html("Is Redy");
+   $("#main").html("Is Ready");
      console.log("event: "+id); 
 
   }

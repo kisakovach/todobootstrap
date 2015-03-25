@@ -1,0 +1,47 @@
+````````````````body{
+
+ 			position: relative; 
+ 		}
+
+ 		
+ 		
+ 		
+ 		.btn-group-justified .btn-default{
+			
+			border-top: 2px solid black;
+			border-bottom: 2px solid black;
+		 	border-left: 1px solid black;
+		 	border-right: 1px solid black;
+ 		}
+ 		
+
+
+ 		.btn-group-justified .btn-default:first-child{
+ 			border-left: 1px solid black;
+ 			border-top-left-radius: 15px;
+ 			border-bottom-left-radius: 15px;
+ 		}
+
+ 		.btn-group-justified .btn-default:last-child{
+ 			border-right: 1px solid black;
+ 			border-top-right-radius: 15px;
+ 			border-bottom-right-radius: 15px;
+ 		
+ 		}
+
+ 		.navbar {
+ 			text-align: center;
+ 			padding: 4px;
+ 			background-color: grey; 			
+ 		}
+
+ 		.page-header{
+
+			background-color: grey; 			
+ 		}
+
+ 		.up-btn {
+
+ 			border-top-left-radius: 40px 10px ; 
+ 			border-bottom-left-radius:40px 10px;
+ 		}

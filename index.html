@@ -5,57 +5,8 @@
  	<meta name="viewport" conent="width=device-width, initial=1">
  	<title>todo bootstarp</title>
  	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
- 	<style type="text/css">
- 		body{
-
- 			position: relative; 
- 		}
-
- 		
- 		
- 		
- 		.btn-group-justified .btn-default{
-			
-			border-top: 2px solid black;
-			border-bottom: 2px solid black;
-		 	border-left: 1px solid black;
-		 	border-right: 1px solid black;
- 		}
- 		
-
-
- 		.btn-group-justified .btn-default:first-child{
- 			border-left: 1px solid black;
- 			border-top-left-radius: 15px;
- 			border-bottom-left-radius: 15px;
- 		}
-
- 		.btn-group-justified .btn-default:last-child{
- 			border-right: 1px solid black;
- 			border-top-right-radius: 15px;
- 			border-bottom-right-radius: 15px;
- 		
- 		}
-
- 		.navbar {
- 			text-align: center;
- 			padding: 4px;
- 			background-color: grey; 			
- 		}
-
- 		.page-header{
-
-			background-color: grey; 			
- 		}
-
- 		.up-btn {
-
- 			border-top-left-radius: 40px 10px ; 
- 			border-bottom-left-radius:40px 10px;
- 		}
-
- 	</style>
- 	<script type="text/javascript" src="cordova.js"></script>
+ 	<link rel="stylesheet" type="text/css" href="css/app.css">
+	<script type="text/javascript" src="cordova.js"></script>
  	<script type="text/javascript" src = "js/jquery.js"></script>
  	<script type="text/javascript" src = "js/bootstrap.js"></script>
  	<script type="text/javascript" src = "js/main.js"></script>
@@ -63,8 +14,11 @@
 </head>
 <body>
  <nav class="navbar navbar-fixed-top">
-		 <button type="button" class="btn btn-default up-btn">Task</button>
-		 <h1><small>ToDo Bootstrap</small></h1>	
+   <div class = "row">
+    <div class ="col-xs-2"><button class="btn btn-default up-btn">Task</button></div>
+    <div class ="col-xs-10"><h1>ToDo Bootstrap</h1></div>    
+   </div>
+   	
  </nav>	 
 <div id="main" class = "container">
 	<p class ="text-center">Начальная страница!</p>
