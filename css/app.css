@@ -1,4 +1,4 @@
-````````````````body{
+                body{
 
  			position: relative; 
  		}
@@ -41,7 +41,27 @@
  		}
 
  		.up-btn {
-
- 			border-top-left-radius: 40px 10px ; 
- 			border-bottom-left-radius:40px 10px;
+ 		       
+		 border:2px solid black;
+		 border-left:0;
+		 border-radius:10px; 
+ 		 margin-left:10px;
+		 	
  		}
+
+                .up-btn:before {
+                 
+		 position: absolute;
+		 margin-left:-20px;
+	         margin-top:-4px;
+		 content:"";
+		 width:28px;
+		 height:28px;
+		 transform: rotate(45deg); 
+		 -moz-transform: rotate(45deg);
+		 border-left:2px solid black;
+		 border-bottom:2px solid black;
+		 border-radius:10px;
+                 background-color:white;
+		 z-index:-1;
+		}
