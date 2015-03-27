@@ -1,6 +1,8 @@
-                body{
-
- 			position: relative; 
+        body{
+        
+        	border-left:2px solid black; 
+			border-right:2px solid black;
+ 		
  		}
 
  		
@@ -15,14 +17,15 @@
  		}
  		
 
-
  		.btn-group-justified .btn-default:first-child{
+ 			
  			border-left: 1px solid black;
  			border-top-left-radius: 15px;
  			border-bottom-left-radius: 15px;
  		}
 
  		.btn-group-justified .btn-default:last-child{
+ 			
  			border-right: 1px solid black;
  			border-top-right-radius: 15px;
  			border-bottom-right-radius: 15px;
@@ -32,28 +35,43 @@
  		.navbar {
  			text-align: center;
  			padding: 4px;
- 			background-color: grey; 			
+ 			background-color: grey;
+ 			border-bottom: 1px solid black;
+ 			border-top: 1px solid black;
+ 			border-left:2px solid black; 
+			border-right:2px solid black;  			
  		}
 
- 		.page-header{
+ 		.up-header{
 
-			background-color: grey; 			
+			background-color: #D4D0C8; 			
+ 		
  		}
 
  		.up-btn {
- 		       
+ 		 font-weight: bold;
+ 		 background: none;      
 		 border:2px solid black;
-		 border-left:0;
-		 border-radius:10px; 
- 		 margin-left:10px;
-		 	
+		 border-left-style:none;
+		 border-radius:5px; 
+ 		 margin-left:20px;
+		 margin-top:6px;
+		 margin-bottom: 6px;
+		 padding-left: 0px;	
  		}
 
-                .up-btn:before {
-                 
+        .up-btn:hover{
+
+        	border-color: black;
+        	background:none;  
+
+        }
+
+        .up-btn:before {
+         background: none;        
 		 position: absolute;
-		 margin-left:-20px;
-	         margin-top:-4px;
+		 margin-left:-12px;
+	     margin-top:-4px;
 		 content:"";
 		 width:28px;
 		 height:28px;
@@ -61,7 +79,48 @@
 		 -moz-transform: rotate(45deg);
 		 border-left:2px solid black;
 		 border-bottom:2px solid black;
-		 border-radius:10px;
-                 background-color:white;
+		 border-radius:5px;
 		 z-index:-1;
+		}
+
+		#main{
+
+			margin-top: 57px;
+			overflow-y:hidden;
+			text-align: center;
+
+		}
+
+		.addform .form-control,.addform .btn-default {
+
+			margin-top: 4px;
+			border:2px solid black;
+
+		}
+
+		.input-group{
+
+			margin-top: 4px;
+
+		} 
+
+		.input-group .form-control{
+		
+			margin-top: 0px;			
+			border: 2px solid black; 
+		
+		}
+
+		.input-group span{
+
+		  border: 2px solid black; 	
+		
+		}
+
+		.addform .btn-default {
+
+			padding:2px 6px;
+			margin-top: 40px;
+			border:2px solid black;
+			margin-bottom: 10px;
 		}
