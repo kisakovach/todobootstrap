@@ -3,28 +3,45 @@
 <head>
  	<meta charset="utf-8">
  	<meta name="viewport" conent="width=device-width, initial=1">
- 	<title>todo bootstarp</title>
+ 	<title>todo bootstarp show</title>
  	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
- 	<link rel="stylesheet" type="text/css" href="css/transitions.css">
-
  	<link rel="stylesheet" type="text/css" href="css/app.css">
 	<script type="text/javascript" src="cordova.js"></script>
  	<script type="text/javascript" src = "js/jquery.js"></script>
- 	<script type="text/javascript" src = "js/underscore.js"></script>
- 	<script type="text/javascript" src = "js/backbone.js"></script>
- 	<script type="text/javascript" src = "js/rad.js"></script>
+ 	<script type="text/javascript" src = "js/bootstrap.js"></script>
  	<script type="text/javascript" src = "js/main.js"></script>
 
 </head>
 <body>
-<nav class="navbar navbar-fixed-top up-header">
+ <nav class="navbar navbar-fixed-top up-header">
    <div class = "row">
     <div class ="col-xs-2"><button class="btn btn-default up-btn">Tasks</button></div>
     <div class ="col-xs-10"></div>    
    </div>  	
  </nav>
-<div id="main" class = "container"></div>
-
+<div id="main" class = "container">
+ <div class ="title"><h3>Shedule your task</h3></div>
+ <div class = "div-round">		
+	<div class="row">
+		<div class="col-xs-6 text-left">Monday</div><div class="col-xs-6 text-right">5:00-5:15</div>
+	</div>
+	 <div class="div-line" >
+	 <div class="row">
+		<div class="col-xs-6 text-left">Tuesday</div><div class="col-xs-6 text-right">5:00-5:15</div>
+	 </div>
+	 </div>	
+	 <div class="div-line">
+	 <div class="row">	
+		<div class="col-xs-6 text-left" >26/12/2013</div><div class="col-xs-6 text-right">5:00-5:15</div>
+	 </div>
+	</div>
+	 <div  class="div-line">
+	 <div class="row">	
+		<div class="col-xs-6 text-left">None</div><div class="col-xs-6 text-right">5:00-5:15</div>
+	 </div>
+	</div>
+</div>
+</div>
  <nav class="navbar navbar-fixed-bottom footer">
 	<div class="btn-group btn-group-justified">
 	 <div class="btn-group">
@@ -42,4 +59,7 @@
 	</div>
  <nav>
 </body>
+<script type="text/javascript">
+$("body").onload = app.initialize;
+</script>
 </html>

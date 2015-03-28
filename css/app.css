@@ -2,7 +2,8 @@
         
         	border-left:2px solid black; 
 			border-right:2px solid black;
- 		
+ 			height: 400px;
+ 			overflow:hidden; 
  		}
 
  		
@@ -17,16 +18,16 @@
  		}
  		
 
- 		.btn-group-justified .btn-default:first-child{
+ 		.btn-group-justified .btn-group:first-child .btn-default{
  			
- 			border-left: 1px solid black;
+ 			border-left: 2px solid black;
  			border-top-left-radius: 15px;
  			border-bottom-left-radius: 15px;
  		}
 
- 		.btn-group-justified .btn-default:last-child{
+ 		.btn-group-justified .btn-group:last-child .btn-default{
  			
- 			border-right: 1px solid black;
+ 			border-right: 2px solid black;
  			border-top-right-radius: 15px;
  			border-bottom-right-radius: 15px;
  		
@@ -85,7 +86,8 @@
 
 		#main{
 
-			margin-top: 57px;
+			margin-top: 58px;
+			margin-bottom: 60px;
 			overflow-y:hidden;
 			text-align: center;
 
@@ -122,5 +124,30 @@
 			padding:2px 6px;
 			margin-top: 40px;
 			border:2px solid black;
+			font-weight: bold;
+			background-color: #D4D0C8;
 			margin-bottom: 10px;
+
+		}
+
+		.div-round {
+			margin-top: 10px;
+			border-radius:10px;
+			border: 2px solid black;
+			padding: 0px;
+		}
+
+		
+		.div-round .row div{
+	      	 padding-left: 18px;
+			 padding-right: 18px;
+		}
+
+		.div-round .row div:last-child {	
+			 color:grey;
+			 line-height: .9;
+		}
+
+		.div-line{
+			border-top:1px solid grey;
 		}
