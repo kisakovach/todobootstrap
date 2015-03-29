@@ -1,10 +1,11 @@
 RAD.view("view.show_task",RAD.Blanks.View.extend({
 
 	url:"js/views/show.html",
-	
+/*	
 	events: {
 	 "tap .div-round" : "open_add"
-    },
+    
+	},
 	
 	open_add: function(){
 		"use strict";
@@ -19,4 +20,5 @@ RAD.view("view.show_task",RAD.Blanks.View.extend({
 		options.extras = {animation: animation};
 		this.publish("navigation.show",options);
 	}
-}))
+*/
+}));

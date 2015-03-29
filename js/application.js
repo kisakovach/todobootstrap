@@ -5,8 +5,8 @@ RAD.application(function (core) {
 
     app.start = function () {
         var options = {
-            container_id: '#main',
-            content: "view.show_task",
+            container_id: '#screen',
+            content: "view.start",
             animation: 'none'
         };
         core.publish('navigation.show', options);

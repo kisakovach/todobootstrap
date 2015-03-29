@@ -5,7 +5,9 @@
         "js/iscroll-lite.js",
         "js/application.js",
         "js/views/show.js",
-        "js/views/add.js"
+        "js/views/add.js",
+	"js/views/list.js",
+	"js/views/start.js"	
         
     ];
 

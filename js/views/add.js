@@ -8,14 +8,14 @@ RAD.view("view.add_task",RAD.Blanks.View.extend({
 	
 	open_show: function(){
 		"use strict";
-		var options = {
+		/*var options = {
 			container_id : "#main",
 			content: "view.show_task"
 		}, animation;
 
-		animation = "slide";
+		animation = this.extras.animation+"-out";
 		options.animation = animation;
-		options.extras = {animation: animation};
-		this.publish("navigation.show",options);
+		this.publish("navigation.show",options);*/
+		console.log("'add shedule' button click");
 	}
 }))
