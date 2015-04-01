@@ -39,7 +39,6 @@ console.log("'add' taped");
 
 onShed: function(){
 
-
 var options={
  	container_id:'#main',
 	content:"view.show_task",	

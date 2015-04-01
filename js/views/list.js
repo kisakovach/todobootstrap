@@ -1,4 +1,4 @@
-RAD.view("view.list_task",RAD.Blanks.View.extend({
+RAD.view("view.list_task",RAD.Blanks.ScrollableView.extend({
 
 	url:"js/views/list.html"
 

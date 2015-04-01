@@ -1,10 +1,10 @@
-RAD.view("view.add_task",RAD.Blanks.View.extend({
+RAD.view("view.add_task",RAD.Blanks.ScrollableView.extend({
 
 	url:"js/views/add.html",
 	
 	events: {
 	 "tap .btn-default":"open_show"
-    },
+   	 },
 	
 	open_show: function(){
 		"use strict";
