@@ -98,33 +98,34 @@
 	}
 
 	.addform .form-control,.addform .btn-default {
-
-	     margin-top: 4px;
-	     
+	     margin-top: 4px; 
 	     border:2px solid black;
         }
 
+	.addform .task_text, .datepicker input,.datepicker span,.addform #task_name {
+	     border-radius:0px;
+	
+	}
+	
 	div.addform {
-	width:90%;
-	margin:auto;
-       }
+	    width:90%;
+	    margin:auto;
+        }
 	
 	.input-group{
              margin-top: 4px;
-
 	} 
 
-	.input-group .form-control{
+	.input-group .form-control, .input-group span{
 	     margin-top: 0px;			
-	     border: 2px solid black; 
-		
+	     border: 2px solid black; 	
 	}
 
+	/*
 	.input-group span{
-             border: 2px solid black; 	
-		
+             border: 2px solid black; 		
 	}
-
+	*/
 	.addform .btn-default {
              padding:2px 6px;
 	     margin-top: 40px;
@@ -135,7 +136,7 @@
         }
 
 	.div-round {
-	     margin-top: 10px;
+	     margin: 10px 5px;
 	     border-radius:10px;
 	     border: 2px solid black;
 	     padding: 0px;

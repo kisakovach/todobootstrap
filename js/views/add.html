@@ -1,13 +1,13 @@
 <div class="scroll-view-body addform">
 	<form class = "addform">
-		<input type="text" class="form-control" placeholder="Task Name">	
+		<input type="text" id="task_name"  class="form-control" placeholder="Task Name">	
 	   	<div class="input-group">
 	   			<input type="text" class="form-control" placeholder="Duration"><span class="input-group-addon glyphicon glyphicon-triangle-bottom"></span>
 		</div>		  
-		<div class="input-group">
-			<input type="text" class="form-control" placeholder="04/22/2012"><span class="input-group-addon glyphicon glyphicon-triangle-bottom"></span>
+		<div class="input-group datepicker">
+			<input type="text" class="form-control" placeholder="04/22/2012"><span class="input-group-addon glyphicon glyphicon-calendar"></span>
 		</div>	
-		<textarea class="form-control">Notes</textarea>
+		<textarea class="form-control task_text">Notes</textarea>
 		<button class = "btn btn-default">Shedule Task</button>	
 	</form>
 </div>
