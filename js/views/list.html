@@ -1,33 +1,20 @@
-<div class="scroll-view-body">
-<p class ="text-center">Начальная страница!</p>
-	<p>Для формы поиска установила background-color, везде работает,а в IE 7 и 8 вместо мною установленного цвета просто белый цвет.Как сделать так,что бы и в раннем ie цвет формы поиска стал синим?
-	стили:
-	form{width:250px;}
+<div class="scroll-view-body" > 
+{{#var p = this.model.groupBy(RAD.utils.cropdate);
+   for(key in p){	
+}}
+<div style ="width:80%;margin-left:auto;margin-right:auto;" data-template>
+ <p>{{ key.substr(0,16) }} <p>
+    {{# var group=p[key];}}
+ <table class="table table-striped table-bordered" style="width:100%;">
+    {{#_(group).each(function(task){   }}	
+ <tr class = "{{ task.get('completed')?'completed':''  }}"><td>{{ task.get("title") }} </td>                      
+     <td>{{# t = task.get("deadline").toLocaleTimeString() }}{{ t }} </td>
+     <td><input type="checkbox" value={{ task.cid }} {{# task.get("completed")?ch="checked":ch="" }} {{ ch }} ></td></tr>
+    {{# });  }}
+ </table>
+</div>
+{{#  }; }}
 
-	input.colorsearch{
-	margin-right:12px;
-	background-color:rgba(11,77,130,0.5);
-	padding:5px;
-	color:#fff;
-	border-bottom:1px solid #2c8ec2;
-	border-top:1px solid #0c4073;
-	border-right:1px solid
-	width:175px;
-	}</p>
-	<p>
-	Для формы поиска установила background-color, везде работает,а в IE 7 и 8 вместо мною установленного цвета просто белый цвет.Как сделать так,что бы и в раннем ie цвет формы поиска стал синим?
-	стили:
-	form{width:250px;}
 
-	input.colorsearch{
-	margin-right:12px;
-	background-color:rgba(11,77,130,0.5);
-	padding:5px;
-	color:#fff;
-	border-bottom:1px solid #2c8ec2;
-	border-top:1px solid #0c4073;
-	border-right:1px solid
-	width:175px;
-	}	
-</p>
+
 </div>
