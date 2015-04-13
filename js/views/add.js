@@ -17,5 +17,15 @@ RAD.view("view.add_task",RAD.Blanks.ScrollableView.extend({
 		options.animation = animation;
 		this.publish("navigation.show",options);*/
 		console.log("'add shedule' button click");
+	},
+
+	onEndAttach: function(){
+             
+		 console.log("end render");	
+		 $('#datepicker').datetimepicker({
+                    locale: 'ru',
+		    viewMode: 'years',
+                    format: 'DD//MM/YYYY'
+                });   
 	}
 }))

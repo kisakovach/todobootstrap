@@ -11,13 +11,9 @@
 
 
 
-	body {
-             
+	body {            
 			  	
-             min-width: 300px;
-	     height: 100%;
-	     margin: 0px;	
- 	     overflow: hidden;
+             overflow: hidden;
  	}
 
  	#screen {
@@ -26,7 +22,8 @@
 	     border:2px solid black;
 	     overflow: hidden;
 	}	
- 		
+ 	
+	/*---- bottom button panel ----*/	
  		
 	.btn-group-justified .btn-default{
 		border-top: 2px solid black;
@@ -51,6 +48,8 @@
  		
  	}
 
+
+	/*-------end---------*/
  	.navbar {
  		text-align: center;
  		padding: 4px;
@@ -61,6 +60,9 @@
 		border-right:2px solid black;  			
  	}
 
+
+	
+	/*--- header ----*/
  	.up-header{
         	background-color: #D4D0C8; 			
  		
@@ -100,7 +102,8 @@
 		border-radius:5px;
 		z-index:-1;
 	}
-
+	/*--------end-------*/
+	
 	#main {
 
 	     position: absolute;
@@ -109,6 +112,9 @@
 	     bottom: 3em;
 	     text-align: center;  
 	}
+
+
+	/*----- Add task -----*/	
 
 	.addform .form-control,.addform .btn-default {
 	     margin-top: 4px; 
@@ -122,6 +128,7 @@
 	
 	div.addform {
 	    width:90%;
+	    height:100%;
 	    margin:auto;
         }
 	
@@ -166,9 +173,14 @@
 	     background-color: #D4D0C8;
 	     margin-bottom: 10px;
         }
+	/*-----end-----*/
+        
+	/*-----Shedule-----*/
 
 	.div-round {
-	     margin: 10px 5px;
+	     width:95%;
+	    /* margin: 10px 5px;*/
+	     margin:auto;
 	     border-radius:10px;
 	     border: 2px solid black;
 	     padding: 0px;
@@ -179,7 +191,7 @@
 	     padding-left: 18px;
 	     padding-right: 18px;
 	}
-
+	
 	.div-round .row div:last-child {	
 	     color:grey;
 	     line-height: .9;
@@ -212,6 +224,8 @@
   		background-color: #D4D0C8;
 	}
 	/*---- end ---- */
-
+	.bootstrap-datetimepicker-widget {
+		z-index:10000;
+	}
 
 	

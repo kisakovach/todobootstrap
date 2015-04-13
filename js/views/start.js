@@ -33,7 +33,7 @@ var options={
  animation = "fade";
  options.animation = animation;
  this.publish("navigation.show",options);
-console.log("'add' taped");
+ console.log("'add' taped");
 
 },
 

@@ -5,61 +5,33 @@
  	<meta name="viewport" conent="width=device-width, initial=1">
  	<title>todo bootstarp show</title>
  	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
- 	<link rel="stylesheet" type="text/css" href="css/app.css">
-	<script type="text/javascript" src="cordova.js"></script>
- 	<script type="text/javascript" src = "js/jquery.js"></script>
+ 	<link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.css">
+
+ 	<script type="text/javascript" src = "js/jquery.js"> </script>
+	<script type="text/javascript" src = "js/momentwls.js"></script> 	
  	<script type="text/javascript" src = "js/bootstrap.js"></script>
- 	<script type="text/javascript" src = "js/main.js"></script>
+	<script type="text/javascript" src="js/bootstrap-datetimepicker.js"></script> 	
 
 </head>
 <body>
- <nav class="navbar navbar-fixed-top up-header">
-   <div class = "row">
-    <div class ="col-xs-2"><button class="btn btn-default up-btn">Tasks</button></div>
-    <div class ="col-xs-10"></div>    
-   </div>  	
- </nav>
-<div id="main" class = "container">
- <div class ="title"><h3>Shedule your task</h3></div>
- <div class = "div-round">		
-	<div class="row">
-		<div class="col-xs-6 text-left">Monday</div><div class="col-xs-6 text-right">5:00-5:15</div>
-	</div>
-	 <div class="div-line" >
-	 <div class="row">
-		<div class="col-xs-6 text-left">Tuesday</div><div class="col-xs-6 text-right">5:00-5:15</div>
-	 </div>
-	 </div>	
-	 <div class="div-line">
-	 <div class="row">	
-		<div class="col-xs-6 text-left" >26/12/2013</div><div class="col-xs-6 text-right">5:00-5:15</div>
-	 </div>
-	</div>
-	 <div  class="div-line">
-	 <div class="row">	
-		<div class="col-xs-6 text-left">None</div><div class="col-xs-6 text-right">5:00-5:15</div>
-	 </div>
-	</div>
+ <div class="container">
+    <div class="row">
+        <div class='col-sm-6'>
+            <div class="form-group">
+                <div class='input-group date' id='datetimepicker1'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(function () {
+                $('#datetimepicker1').datetimepicker();
+            });
+        </script>
+    </div>
 </div>
-</div>
- <nav class="navbar navbar-fixed-bottom footer">
-	<div class="btn-group btn-group-justified">
-	 <div class="btn-group">
-		<button type="button" class="btn btn-default">List</button>
-	 </div>
-	 <div class="btn-group">	
-		<button type="button" class="btn btn-default">Shedule</button>
-	 </div> 	
-	 <div class="btn-group">	
-		<button type="button" class="btn btn-default">Add</button>
-	 </div>
-	 <div class="btn-group">
-		<button type="button" class="btn btn-default">Time</button>
-	 </div>	
-	</div>
- <nav>
 </body>
-<script type="text/javascript">
-$("body").onload = app.initialize;
-</script>
 </html>
