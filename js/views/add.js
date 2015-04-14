@@ -1,7 +1,7 @@
 RAD.view("view.add_task",RAD.Blanks.ScrollableView.extend({
 
 	url:"js/views/add.html",
-	
+	//model: RAD.task("tasks"),
 	events: {
 	 "tap .btn-default":"open_show"
    	 },
@@ -16,6 +16,12 @@ RAD.view("view.add_task",RAD.Blanks.ScrollableView.extend({
 		animation = this.extras.animation+"-out";
 		options.animation = animation;
 		this.publish("navigation.show",options);*/
+			
+	        RAD.model("tasks").add({"title": this.$("#title").val(),
+					"deadline": new Date(this.$("#deadline").val()+" "+this.$("#time").val()), 
+					"text":this.$("#text").val()
+					});
+		this.publish("view.model.change");
 		console.log("'add shedule' button click");
 	},
 
@@ -25,7 +31,12 @@ RAD.view("view.add_task",RAD.Blanks.ScrollableView.extend({
 		 $('#datepicker').datetimepicker({
                     locale: 'ru',
 		    viewMode: 'years',
-                    format: 'DD//MM/YYYY'
-                });   
+                    format: 'MM/DD/YYYY'
+                 });
+
+		$('#timepicker').datetimepicker({
+                    locale: 'ru',
+                    format: 'HH:mm'
+                 });      
 	}
 }))
