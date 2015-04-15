@@ -2,6 +2,7 @@ RAD.view("view.start", RAD.Blanks.View.extend({
 
 url:"js/views/start.html",
 
+
 events : {
 
 "tap #list-btn":"onList",
@@ -20,6 +21,9 @@ console.log("Load tasks");
 
 
 onList: function(){
+
+this.$('#head-button').html("<h3>Tasks</h3>");
+
 var options={
 container_id:'#main',
 content:"view.list_task"	
@@ -32,6 +36,8 @@ content:"view.list_task"
 },
 
 onAdd: function(){
+
+this.$('#head-button').html("<button class='btn btn-default up-btn'>Tasks</button>");
 
 var options={
  	container_id:'#main',
@@ -46,6 +52,8 @@ var options={
 },
 
 onShed: function(){
+
+this.$('#head-button').html("<button class='btn btn-default up-btn'>Edit Task</button>");
 
 var options={
  	container_id:'#main',

@@ -6,6 +6,7 @@ RAD.view("view.add_task",RAD.Blanks.ScrollableView.extend({
 	 "tap .btn-default":"add_task"
    	 },
 	
+	
 	add_task: function(){
 		"use strict";
 		/*var options = {
