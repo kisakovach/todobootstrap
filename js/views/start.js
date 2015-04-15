@@ -11,10 +11,18 @@ events : {
 
 },
 
+onInitialize: function() {
+
+RAD.models.tasks.loadFromLocal();
+console.log("Load tasks");
+
+},
+
+
 onList: function(){
 var options={
 container_id:'#main',
-content:"view.list_task",	
+content:"view.list_task"	
 }, animation;
 
  animation = "fade";

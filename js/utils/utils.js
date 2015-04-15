@@ -13,3 +13,9 @@ RAD.utils.cropdate = function(task){
         date.getDate()); 
 };
 
+RAD.utils.fromUTCDate = function(key,value){
+
+      if(key == "deadline") return new Date(value);
+      return value;
+
+    }

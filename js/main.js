@@ -14,7 +14,8 @@
 	"js/views/start.js",
 				    
     ];
-
+    
+	
     function onEndLoad() {
         console.log("onEndLoad");
         var core = window.RAD.core,
@@ -26,7 +27,9 @@
                 debug: false
             };
 
+
         //initialize core by new application object
+
         core.initialize(application, coreOptions);
 
 		
@@ -34,7 +37,7 @@
         application.start();
 	
 	//initialize Task collection
-
+	/*
 	RAD.model("tasks").add([
 	{"title":"First task","text":"new text 1"},
 	{"title":"Second task","text":"new text 2"},
@@ -49,7 +52,7 @@
 	{"title":"task43","deadline":new Date("10/15/2015 7:56"),"text":"new text 32","completed":0},
 	{"title":"task52","deadline":new Date("10/15/2015 9:38"),"text":"new text 12","completed":1},
 	]);
-
+	*/
 	console.log(RAD.models);
 	
     };

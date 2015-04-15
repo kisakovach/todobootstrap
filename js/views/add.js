@@ -3,10 +3,10 @@ RAD.view("view.add_task",RAD.Blanks.ScrollableView.extend({
 	url:"js/views/add.html",
 	//model: RAD.task("tasks"),
 	events: {
-	 "tap .btn-default":"open_show"
+	 "tap .btn-default":"add_task"
    	 },
 	
-	open_show: function(){
+	add_task: function(){
 		"use strict";
 		/*var options = {
 			container_id : "#main",
@@ -17,11 +17,12 @@ RAD.view("view.add_task",RAD.Blanks.ScrollableView.extend({
 		options.animation = animation;
 		this.publish("navigation.show",options);*/
 			
-	        RAD.model("tasks").add({"title": this.$("#title").val(),
+	        RAD.models.tasks.add({"title": this.$("#title").val(),
 					"deadline": new Date(this.$("#deadline").val()+" "+this.$("#time").val()), 
 					"text":this.$("#text").val()
 					});
 		this.publish("view.model.change");
+		RAD.models.tasks.saveToLocal();
 		console.log("'add shedule' button click");
 	},
 

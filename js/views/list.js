@@ -16,7 +16,11 @@ RAD.view("view.list_task",RAD.Blanks.ScrollableView.extend({
 		console.log("get value: "+cid);
 		if(!e.target.hasAttribute("checked")){                                         
 			this.model.get(cid).set("completed",1);
-		} else { this.model.get(cid).set("completed",0); }                                                                                 
+			RAD.models.tasks.saveToLocal();
+		} else { 
+			this.model.get(cid).set("completed",0);
+			RAD.models.tasks.saveToLocal();
+		 }                                                                                 
 	}
 
 
