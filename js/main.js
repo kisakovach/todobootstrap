@@ -2,18 +2,17 @@
     'use strict';
 
     var scripts = [
-        "js/iscroll-lite.js",
-	"js/utils/utils.js",
-	"js/models/task.js",
-	"js/models/tasks.js",
-	"js/application.js",
-        "js/views/show.js",
-        "js/views/add.js",
-	"js/views/daytasks.js",
-	"js/views/list.js",
-	"js/views/start.js",
-				    
-    ];
+          "js/lib/iscroll-lite.js",
+        	"js/utils/utils.js",
+        	"js/models/task.js",
+        	"js/models/tasks.js",
+        	"js/application.js",
+          "js/views/show.js",
+          "js/views/add.js",
+        	"js/views/daytasks.js",
+        	"js/views/list.js",
+        	"js/views/start.js",
+	       ];
     
 	
     function onEndLoad() {

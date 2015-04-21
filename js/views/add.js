@@ -6,7 +6,19 @@ RAD.view("view.add_task",RAD.Blanks.ScrollableView.extend({
 	 "tap .btn-default":"add_task"
    	 },
 	
-	
+	onInitialize: function(){
+
+		this.model = new RAD.models.task();
+	},
+
+	onNewExtras: function (extras) {
+		// body...
+		
+		this.model.set(RAD.models.tasks.get(extras.i).toJSON());
+		console.log(extras.i);
+
+	},
+
 	add_task: function(){
 		"use strict";
 		/*var options = {
@@ -18,7 +30,7 @@ RAD.view("view.add_task",RAD.Blanks.ScrollableView.extend({
 		options.animation = animation;
 		this.publish("navigation.show",options);*/
 			
-	        RAD.models.tasks.add({"title": this.$("#title").val(),
+	    RAD.models.tasks.add({"title": this.$("#title").val(),
 					"deadline": new Date(this.$("#deadline").val()+" "+this.$("#time").val()), 
 					"text":this.$("#text").val()
 					});

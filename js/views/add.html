@@ -1,13 +1,13 @@
 <div class="scroll-view-body addform">
 	<form class = "addform">
-		<input type="text" id="title"  class="form-control" placeholder="Task Name">	
+		<input type="text" id="title"  class="form-control" placeholder="{{ model.title }}">	
 	   	<div id="timepicker" class="input-group date">
 	   			<input id="time" type="text" class="form-control" placeholder="Duration"><span class="input-group-addon glyphicon glyphicon-triangle-bottom"></span>
 		</div>		  
 		<div id="datepicker"  class="input-group datepicker date">
 			<input id="deadline" type="text" class="form-control" placeholder="04/22/2012"><span class="input-group-addon glyphicon glyphicon-calendar"></span>
 		</div>	
-		<textarea id="text" class="form-control task_text">Notes</textarea>	
+		<textarea id="text" class="form-control task_text">{{ model.text }}</textarea>	
 	</form>
 		<button class = "btn btn-default">Shedule Task</button>	
 </div>

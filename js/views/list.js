@@ -6,8 +6,13 @@ RAD.view("view.list_task",RAD.Blanks.ScrollableView.extend({
 	 // this.$("#test").append(this.getView())
 	},
 
+	onInitialize: function(){
+		RAD.utils.setMomentLocale("ru");
+	},
+
 	events:{
-	 "change input":"OnCheck"
+	 "change input":"OnCheck",
+	 "click tr": "OnTaskClick"
 	
 	},
 	
@@ -21,6 +26,17 @@ RAD.view("view.list_task",RAD.Blanks.ScrollableView.extend({
 			this.model.get(cid).set("completed",0);
 			RAD.models.tasks.saveToLocal();
 		 }                                                                                 
+	},
+
+	OnTaskClick: function(e){
+
+		if(!e.target.hasAttribute("checkbox")){
+			
+			var cid = $(e.target.parentNode).find("input").val();
+			//console.log(e.target.innerHTML);
+			//console.log("task edit "+cid+" checked");
+			this.application.edit(cid);
+		}
 	}
 
 

@@ -38,7 +38,6 @@ content:"view.list_task"
 onAdd: function(){
 
 this.$('#head-button').html("<button class='btn btn-default up-btn'>Tasks</button>");
-
 var options={
  	container_id:'#main',
 	content:"view.add_task",	
